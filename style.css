@@ -1,0 +1,37 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.add {
+  margin-bottom: 10px;
+}
+
+.add:hover {
+  cursor: pointer;
+}
+
+.form {
+  display: flex;
+}
+
+.form input[type="number"] {
+  max-width: 75px;
+}
+
+.green {
+  color: greenyellow;
+}
+
+.red {
+  color: red;
+}
+
+td {
+  max-width: 300px;
+}

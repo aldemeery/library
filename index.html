@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Library</title>
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css"
+        />
+        <link rel="stylesheet" href="./style.css" />
+    </head>
+    <body>
+        <h1>Bibliotheca</h1>
+        <details open>
+            <summary class="add">Add a new book</summary>
+            <div class="form-wrapper">
+                <form class="form">
+                    <input
+                        type="text"
+                        name="title"
+                        id="title"
+                        placeholder="Title"
+                    />
+                    <input
+                        type="text"
+                        name="author"
+                        id="author"
+                        placeholder="Author"
+                    />
+                    <input
+                        type="number"
+                        name="pages"
+                        id="pages"
+                        width="20px"
+                        placeholder="Pages"
+                    />
+                    <input
+                        type="date"
+                        name="date"
+                        id="date"
+                        placeholder="Date"
+                    />
+                    <input type="submit" value="Add" />
+                </form>
+            </div>
+        </details>
+        <hr />
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>No. of pages</th>
+                    <th>Date</th>
+                    <th>Read</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing.
+                    </td>
+                    <td>Yokomoto</td>
+                    <td>299</td>
+                    <td>2020-12-12</td>
+                    <td class="green">&check;</td>
+                    <td><a href="#">Remove</a> | <a href="#">Toggle</a></td>
+                </tr>
+                <tr>
+                    <td>Godzilla</td>
+                    <td>Yokomoto</td>
+                    <td>299</td>
+                    <td>2020-12-12</td>
+                    <td class="red">&times;</td>
+                    <td><a href="#">Remove</a> | <a href="#">Toggle</a></td>
+                </tr>
+                <tr>
+                    <td>Godzilla</td>
+                    <td>Yokomoto</td>
+                    <td>299</td>
+                    <td>2020-12-12</td>
+                    <td class="green">&check;</td>
+                    <td><a href="#">Remove</a> | <a href="#">Toggle</a></td>
+                </tr>
+                <tr>
+                    <td>Godzilla</td>
+                    <td>Yokomoto</td>
+                    <td>299</td>
+                    <td>2020-12-12</td>
+                    <td class="red">&times;</td>
+                    <td><a href="#">Remove</a> | <a href="#">Toggle</a></td>
+                </tr>
+                <tr>
+                    <td>Godzilla</td>
+                    <td>Yokomoto</td>
+                    <td>299</td>
+                    <td>2020-12-12</td>
+                    <td class="green">&check;</td>
+                    <td><a href="#">Remove</a> | <a href="#">Toggle</a></td>
+                </tr>
+            </tbody>
+        </table>
+        <script src="./scripts.js"></script>
+    </body>
+</html>
