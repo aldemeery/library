@@ -21,12 +21,14 @@
                         name="title"
                         id="title"
                         placeholder="Title"
+                        required
                     />
                     <input
                         type="text"
                         name="author"
                         id="author"
                         placeholder="Author"
+                        required
                     />
                     <input
                         type="number"
@@ -34,12 +36,14 @@
                         id="pages"
                         width="20px"
                         placeholder="Pages"
+                        required
                     />
                     <input
                         type="date"
                         name="date"
                         id="date"
                         placeholder="Date"
+                        required
                     />
                     <input type="submit" value="Add" />
                 </form>
@@ -49,58 +53,16 @@
         <table>
             <thead>
                 <tr>
+                    <th>ID</th>
                     <th>Title</th>
                     <th>Author</th>
-                    <th>No. of pages</th>
                     <th>Date</th>
+                    <th>No. of pages</th>
                     <th>Read</th>
                     <th></th>
                 </tr>
             </thead>
-            <tbody>
-                <tr>
-                    <td>
-                        Lorem ipsum dolor sit, amet consectetur adipisicing.
-                    </td>
-                    <td>Yokomoto</td>
-                    <td>299</td>
-                    <td>2020-12-12</td>
-                    <td class="green">&check;</td>
-                    <td><a href="#">Remove</a> | <a href="#">Toggle</a></td>
-                </tr>
-                <tr>
-                    <td>Godzilla</td>
-                    <td>Yokomoto</td>
-                    <td>299</td>
-                    <td>2020-12-12</td>
-                    <td class="red">&times;</td>
-                    <td><a href="#">Remove</a> | <a href="#">Toggle</a></td>
-                </tr>
-                <tr>
-                    <td>Godzilla</td>
-                    <td>Yokomoto</td>
-                    <td>299</td>
-                    <td>2020-12-12</td>
-                    <td class="green">&check;</td>
-                    <td><a href="#">Remove</a> | <a href="#">Toggle</a></td>
-                </tr>
-                <tr>
-                    <td>Godzilla</td>
-                    <td>Yokomoto</td>
-                    <td>299</td>
-                    <td>2020-12-12</td>
-                    <td class="red">&times;</td>
-                    <td><a href="#">Remove</a> | <a href="#">Toggle</a></td>
-                </tr>
-                <tr>
-                    <td>Godzilla</td>
-                    <td>Yokomoto</td>
-                    <td>299</td>
-                    <td>2020-12-12</td>
-                    <td class="green">&check;</td>
-                    <td><a href="#">Remove</a> | <a href="#">Toggle</a></td>
-                </tr>
-            </tbody>
+            <tbody id="body"></tbody>
         </table>
         <script src="./scripts.js"></script>
     </body>
