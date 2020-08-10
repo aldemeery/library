@@ -1,3 +1,5 @@
+const myLibrary = [];
+
 const Book = (function () {
   function Book(data = {}) {
     this.id = data.id;
@@ -117,6 +119,7 @@ const Book = (function () {
 function render() {
   const body = document.getElementById('body');
   body.innerHTML = '';
+  myLibrary.map(e => e.toString());
   Book.toArray().forEach((book) => {
     const tr = book.render();
     const td = document.createElement('td');
@@ -146,6 +149,10 @@ function render() {
   });
 }
 
+function addBooktoLibrary(data) {
+  new Book(data).save();
+}
+
 const form = document.querySelector('.form');
 form.onsubmit = (e) => {
   e.preventDefault();
@@ -157,12 +164,12 @@ form.onsubmit = (e) => {
     pages,
   } = e.target.elements;
 
-  new Book({
+  addBooktoLibrary({
     title: title.value,
     author: author.value,
     date: date.value,
     pages: pages.value,
-  }).save();
+  });
 
   e.target.reset();
 
