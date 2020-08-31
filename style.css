@@ -35,3 +35,7 @@ html {
 td {
   max-width: 300px;
 }
+
+a:hover {
+  cursor: pointer;
+}
